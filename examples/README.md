@@ -2,33 +2,31 @@
 
 The `ballerinax/hubspot.files` connector provides practical examples illustrating usage in various scenarios.
 
-[//]: # (TODO: Add examples)
-1. 
-2. 
+| Example | Description |
+|---------|-------------|
+| [`file-upload-signed-url`](./file-upload-signed-url) | Create a folder, search files, and generate signed URLs for temporary sharing |
 
 ## Prerequisites
 
-[//]: # (TODO: Add prerequisites)
+1. Build and push the connector to your local Ballerina repository:
+   ```bash
+   cd ballerina
+   bal pack && bal push --repository=local
+   ```
+
+2. For each example, create a `Config.toml` in the example directory:
+   ```toml
+   privateAppToken = "<your-hubspot-private-app-token>"
+   ```
 
 ## Running an example
 
-Execute the following commands to build an example from the source:
-
-* To build an example:
-
-    ```bash
-    bal build
-    ```
-
-* To run an example:
-
-    ```bash
-    bal run
-    ```
+```bash
+cd examples/file-upload-signed-url
+bal run
+```
 
 ## Building the examples with the local module
-
-**Warning**: Due to the absence of support for reading local repositories for single Ballerina files, the Bala of the module is manually written to the central repository as a workaround. Consequently, the bash script may modify your local Ballerina repositories.
 
 Execute the following commands to build all the examples against the changes you have made to the module locally:
 
